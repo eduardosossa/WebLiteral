@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using proyectoliteral.Controllers;
 
 namespace UNITest
 {
@@ -12,31 +13,31 @@ namespace UNITest
         public void TestNumeroGet()
         {
             //arrange preparacion
-            string num1 = "9";
-            string esperado = "Nueve";
+            string num1 = "5";
+            string esperado = "Cinco";
 
             LiteralController lit = new LiteralController();
 
             //act= ejecucion
 
             string resultado = lit.NumeroGet(num1);
-            
+
             //assert=verificacion
             Assert.AreEqual(esperado, resultado);
         }
-        [Test]
+        
         public void TestNumeroPost()
         {
             //arrange preparacion
-            string num1 = "321";
-            string esperado = "Trescientos veinte y uno";
+            string num1 = "5";
+            string esperado = "Cinco";
 
             LiteralController lit = new LiteralController();
 
             //act= ejecucion
 
             string resultado = lit.NumeroPost(num1);
-            
+
             //assert=verificacion
 
             Assert.AreEqual(esperado, resultado);

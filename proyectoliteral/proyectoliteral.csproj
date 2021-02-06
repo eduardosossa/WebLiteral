@@ -2,11 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>c781d089-3434-401f-a429-ef2093f71f0c</UserSecretsId>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\UNITest\UNITest.csproj" />
-  </ItemGroup>
 
 
 </Project>
